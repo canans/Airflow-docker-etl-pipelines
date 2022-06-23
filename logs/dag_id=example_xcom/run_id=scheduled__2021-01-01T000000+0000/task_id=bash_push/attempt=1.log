@@ -1,0 +1,32 @@
+[2022-06-17 09:08:30,039] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.bash_push scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2022-06-17 09:08:30,404] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: example_xcom.bash_push scheduled__2021-01-01T00:00:00+00:00 [queued]>
+[2022-06-17 09:08:30,438] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 09:08:30,472] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-17 09:08:30,488] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 09:08:32,148] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): bash_push> on 2021-01-01 00:00:00+00:00
+[2022-06-17 09:08:32,211] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'example_xcom', 'bash_push', 'scheduled__2021-01-01T00:00:00+00:00', '--job-id', '512', '--raw', '--subdir', '/home/***/.local/lib/python3.7/site-packages/***/example_dags/example_xcom.py', '--cfg-path', '/tmp/tmpo9dfxtqz', '--error-file', '/tmp/tmpeoiqhqbz']
+[2022-06-17 09:08:32,227] {standard_task_runner.py:80} INFO - Job 512: Subtask bash_push
+[2022-06-17 09:08:32,202] {standard_task_runner.py:52} INFO - Started process 3219 to run task
+[2022-06-17 09:08:34,903] {task_command.py:370} INFO - Running <TaskInstance: example_xcom.bash_push scheduled__2021-01-01T00:00:00+00:00 [running]> on host fe209149cfc1
+[2022-06-17 09:08:35,652] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=example_xcom
+AIRFLOW_CTX_TASK_ID=bash_push
+AIRFLOW_CTX_EXECUTION_DATE=2021-01-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-01-01T00:00:00+00:00
+[2022-06-17 09:08:35,859] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-06-17 09:08:36,027] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'echo "bash_push demo"  && echo "Manually set xcom value None" && echo "value_by_return"']
+[2022-06-17 09:08:36,872] {subprocess.py:85} INFO - Output:
+[2022-06-17 09:08:37,056] {subprocess.py:92} INFO - bash_push demo
+[2022-06-17 09:08:37,182] {subprocess.py:92} INFO - Manually set xcom value None
+[2022-06-17 09:08:37,246] {subprocess.py:92} INFO - value_by_return
+[2022-06-17 09:08:37,364] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-06-17 09:08:38,550] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=example_xcom, task_id=bash_push, execution_date=20210101T000000, start_date=20220617T090830, end_date=20220617T090838
+[2022-06-17 09:08:39,046] {local_task_job.py:221} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2022-06-17 09:08:39,080] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 3219. PIDs of all processes in the group: [3219]
+[2022-06-17 09:08:39,114] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 3219
+[2022-06-17 09:08:39,334] {process_utils.py:75} INFO - Process psutil.Process(pid=3219, status='terminated', exitcode=0, started='09:08:31') (3219) terminated with exit code 0

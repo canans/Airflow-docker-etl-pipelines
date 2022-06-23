@@ -1,0 +1,67 @@
+[2022-06-17 06:30:35,811] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl-processing.get_source_data manual__2022-06-17T06:30:32.580674+00:00 [queued]>
+[2022-06-17 06:30:35,839] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl-processing.get_source_data manual__2022-06-17T06:30:32.580674+00:00 [queued]>
+[2022-06-17 06:30:35,844] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 06:30:35,869] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-17 06:30:35,880] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 06:30:35,924] {taskinstance.py:1377} INFO - Executing <Task(_PythonDecoratedOperator): get_source_data> on 2022-06-17 06:30:32.580674+00:00
+[2022-06-17 06:30:35,930] {standard_task_runner.py:52} INFO - Started process 2148 to run task
+[2022-06-17 06:30:35,941] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl-processing', 'get_source_data', 'manual__2022-06-17T06:30:32.580674+00:00', '--job-id', '487', '--raw', '--subdir', 'DAGS_FOLDER/testing_etl.py', '--cfg-path', '/tmp/tmpg95xpskp', '--error-file', '/tmp/tmpdhtv5ft8']
+[2022-06-17 06:30:35,942] {standard_task_runner.py:80} INFO - Job 487: Subtask get_source_data
+[2022-06-17 06:30:36,098] {task_command.py:370} INFO - Running <TaskInstance: etl-processing.get_source_data manual__2022-06-17T06:30:32.580674+00:00 [running]> on host fe209149cfc1
+[2022-06-17 06:30:36,458] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl-processing
+AIRFLOW_CTX_TASK_ID=get_source_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T06:30:32.580674+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-17T06:30:32.580674+00:00
+[2022-06-17 06:30:37,511] {base.py:68} INFO - Using connection ID 'mysql_con' for task execution.
+[2022-06-17 06:30:37,556] {logging_mixin.py:115} INFO - Index(['ID', 'NAME', 'CITY', 'CREATE_DATE'], dtype='object')
+[2022-06-17 06:30:37,556] {python.py:173} INFO - Done. Returned value was:          ID       NAME       CITY CREATE_DATE
+0   4567890   Müşteri1   İstanbul  2021-02-01
+1   4567891   Müşteri1   İstanbul  2021-02-01
+2   4567892   Müşteri1   İstanbul  2021-02-01
+3   4567893   Müşteri1   İstanbul  2021-02-01
+4   4567894   Müşteri3     Ankara  2021-03-01
+5   4567895   Müşteri3     Ankara  2021-03-01
+6   4567896   Müşteri4  Kastamonu  2021-04-01
+7   4567897   Müşteri4  Kastamonu  2021-04-01
+8   4567898   Müşteri4  Kastamonu  2021-04-01
+9   4567899   Müşteri4  Kastamonu  2021-04-01
+10  4567901   Müşteri6  Kastamonu  2021-05-01
+11  4567902   Müşteri7     Batman  2021-06-01
+12  4567903   Müşteri7  Kastamonu  2021-07-01
+13  4567904   Müşteri8     Ankara  2021-08-01
+14  4567905   Müşteri9     Ankara  2021-09-01
+15  4567906   Müşteri6  Kastamonu  2021-05-01
+16  4567907  Müşteri11    Kocaeli  2021-09-01
+17  4567908  Müşteri12    Sakarya  2021-08-01
+18  4567988  Müşteri10     Ankara  2021-09-01
+[2022-06-17 06:30:37,604] {xcom.py:585} ERROR - Could not serialize the XCom value into JSON. If you are using pickle instead of JSON for XCom, then you need to enable pickle support for XCom in your *** config.
+[2022-06-17 06:30:37,608] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 68, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 2392, in xcom_push
+    session=session,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 68, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom.py", line 197, in set
+    map_index=map_index,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom.py", line 582, in serialize_value
+    return json.dumps(value).encode('UTF-8')
+  File "/usr/local/lib/python3.7/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type DataFrame is not JSON serializable
+[2022-06-17 06:30:37,628] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=etl-processing, task_id=get_source_data, execution_date=20220617T063032, start_date=20220617T063035, end_date=20220617T063037
+[2022-06-17 06:30:37,652] {standard_task_runner.py:97} ERROR - Failed to execute job 487 for task get_source_data (Object of type DataFrame is not JSON serializable; 2148)
+[2022-06-17 06:30:37,672] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-17 06:30:37,751] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,223 @@
+[2022-06-17 09:39:21,456] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: xcom-canan.test scheduled__2022-06-16T09:00:00+00:00 [queued]>
+[2022-06-17 09:39:21,797] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: xcom-canan.test scheduled__2022-06-16T09:00:00+00:00 [queued]>
+[2022-06-17 09:39:21,826] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 09:39:21,949] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-17 09:39:21,955] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 09:39:22,150] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): test> on 2022-06-16 09:00:00+00:00
+[2022-06-17 09:39:22,182] {standard_task_runner.py:52} INFO - Started process 4144 to run task
+[2022-06-17 09:39:22,214] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'xcom-canan', 'test', 'scheduled__2022-06-16T09:00:00+00:00', '--job-id', '525', '--raw', '--subdir', 'DAGS_FOLDER/xcom_test.py', '--cfg-path', '/tmp/tmpzr41i8wm', '--error-file', '/tmp/tmp53h259hi']
+[2022-06-17 09:39:22,245] {standard_task_runner.py:80} INFO - Job 525: Subtask test
+[2022-06-17 09:39:23,391] {task_command.py:370} INFO - Running <TaskInstance: xcom-canan.test scheduled__2022-06-16T09:00:00+00:00 [running]> on host fe209149cfc1
+[2022-06-17 09:39:24,665] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=xcom-canan
+AIRFLOW_CTX_TASK_ID=test
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-16T09:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-16T09:00:00+00:00
+[2022-06-17 09:39:24,709] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:290: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2022-06-17 09:39:24,725] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:290: AirflowContextDeprecationWarning: Accessing 'next_ds' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds }}' instead.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2022-06-17 09:39:24,766] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:290: AirflowContextDeprecationWarning: Accessing 'next_ds_nodash' from the template is deprecated and will be removed in a future version. Please use '{{ data_interval_end | ds_nodash }}' instead.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2022-06-17 09:39:24,783] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:290: AirflowContextDeprecationWarning: Accessing 'next_execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_end' instead.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2022-06-17 09:39:24,965] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:290: AirflowContextDeprecationWarning: Accessing 'prev_ds' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2022-06-17 09:39:24,996] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:290: AirflowContextDeprecationWarning: Accessing 'prev_ds_nodash' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2022-06-17 09:39:25,114] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:290: AirflowContextDeprecationWarning: Accessing 'prev_execution_date' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2022-06-17 09:39:25,164] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:290: AirflowContextDeprecationWarning: Accessing 'prev_execution_date_success' from the template is deprecated and will be removed in a future version. Please use 'prev_data_interval_start_success' instead.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2022-06-17 09:39:25,183] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:290: AirflowContextDeprecationWarning: Accessing 'tomorrow_ds' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2022-06-17 09:39:25,199] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:290: AirflowContextDeprecationWarning: Accessing 'tomorrow_ds_nodash' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2022-06-17 09:39:25,214] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:290: AirflowContextDeprecationWarning: Accessing 'yesterday_ds' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2022-06-17 09:39:25,246] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:290: AirflowContextDeprecationWarning: Accessing 'yesterday_ds_nodash' from the template is deprecated and will be removed in a future version.
+  warnings.warn(_create_deprecation_warning(k, replacements))
+
+[2022-06-17 09:39:25,280] {logging_mixin.py:115} WARNING - --- Logging error ---
+[2022-06-17 09:39:25,338] {logging_mixin.py:115} WARNING - Traceback (most recent call last):
+[2022-06-17 09:39:25,380] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 1025, in emit
+    msg = self.format(record)
+[2022-06-17 09:39:25,381] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 869, in format
+    return fmt.format(record)
+[2022-06-17 09:39:25,426] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 608, in format
+    record.message = record.getMessage()
+[2022-06-17 09:39:25,440] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 369, in getMessage
+    msg = msg % self.args
+[2022-06-17 09:39:25,448] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/models/xcom_arg.py", line 106, in __str__
+    f"dag_id='{self.operator.dag.dag_id}'",
+[2022-06-17 09:39:25,460] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/models/baseoperator.py", line 1027, in dag
+    raise AirflowException(f'Operator {self} has not been assigned to a DAG yet')
+[2022-06-17 09:39:25,464] {logging_mixin.py:115} WARNING - ***.exceptions.AirflowException: Operator <Task(_PythonDecoratedOperator): get_source_data> has not been assigned to a DAG yet
+[2022-06-17 09:39:25,493] {logging_mixin.py:115} WARNING - Call stack:
+[2022-06-17 09:39:25,775] {logging_mixin.py:115} WARNING -   File "/home/***/.local/bin/***", line 8, in <module>
+    sys.exit(main())
+[2022-06-17 09:39:25,781] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/__main__.py", line 38, in main
+    args.func(args)
+[2022-06-17 09:39:25,787] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/cli/cli_parser.py", line 51, in command
+    return func(*args, **kwargs)
+[2022-06-17 09:39:25,815] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/utils/cli.py", line 99, in wrapper
+    return f(*args, **kwargs)
+[2022-06-17 09:39:25,817] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/cli/commands/celery_command.py", line 194, in worker
+    _run_worker(options=options, skip_serve_logs=skip_serve_logs)
+[2022-06-17 09:39:25,820] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/cli/commands/celery_command.py", line 94, in _run_worker
+    celery_app.worker_main(options)
+[2022-06-17 09:39:25,829] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/app/base.py", line 391, in worker_main
+    self.start(argv=argv)
+[2022-06-17 09:39:25,832] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/app/base.py", line 371, in start
+    celery.main(args=argv, standalone_mode=False)
+[2022-06-17 09:39:25,834] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/click/core.py", line 1055, in main
+    rv = self.invoke(ctx)
+[2022-06-17 09:39:25,836] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/click/core.py", line 1657, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[2022-06-17 09:39:25,843] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/click/core.py", line 1404, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+[2022-06-17 09:39:25,845] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/click/core.py", line 760, in invoke
+    return __callback(*args, **kwargs)
+[2022-06-17 09:39:25,846] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/click/decorators.py", line 26, in new_func
+    return f(get_current_context(), *args, **kwargs)
+[2022-06-17 09:39:25,849] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/bin/base.py", line 134, in caller
+    return f(ctx, *args, **kwargs)
+[2022-06-17 09:39:25,850] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/bin/worker.py", line 351, in worker
+    worker.start()
+[2022-06-17 09:39:25,852] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/worker/worker.py", line 203, in start
+    self.blueprint.start(self)
+[2022-06-17 09:39:25,855] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/bootsteps.py", line 116, in start
+    step.start(parent)
+[2022-06-17 09:39:25,871] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/bootsteps.py", line 365, in start
+    return self.obj.start()
+[2022-06-17 09:39:25,896] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/concurrency/base.py", line 129, in start
+    self.on_start()
+[2022-06-17 09:39:25,922] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/concurrency/prefork.py", line 115, in on_start
+    **self.options)
+[2022-06-17 09:39:25,966] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/concurrency/asynpool.py", line 463, in __init__
+    super().__init__(processes, *args, **kwargs)
+[2022-06-17 09:39:25,974] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/billiard/pool.py", line 1046, in __init__
+    self._create_worker_process(i)
+[2022-06-17 09:39:25,990] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/concurrency/asynpool.py", line 480, in _create_worker_process
+    return super()._create_worker_process(i)
+[2022-06-17 09:39:26,021] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/billiard/pool.py", line 1158, in _create_worker_process
+    w.start()
+[2022-06-17 09:39:26,030] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/billiard/process.py", line 124, in start
+    self._popen = self._Popen(self)
+[2022-06-17 09:39:26,032] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/billiard/context.py", line 333, in _Popen
+    return Popen(process_obj)
+[2022-06-17 09:39:26,035] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/billiard/popen_fork.py", line 24, in __init__
+    self._launch(process_obj)
+[2022-06-17 09:39:26,065] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/billiard/popen_fork.py", line 79, in _launch
+    code = process_obj._bootstrap()
+[2022-06-17 09:39:26,094] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/billiard/process.py", line 327, in _bootstrap
+    self.run()
+[2022-06-17 09:39:26,168] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/billiard/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+[2022-06-17 09:39:26,177] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/billiard/pool.py", line 292, in __call__
+    sys.exit(self.workloop(pid=pid))
+[2022-06-17 09:39:26,202] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/billiard/pool.py", line 362, in workloop
+    result = (True, prepare_result(fun(*args, **kwargs)))
+[2022-06-17 09:39:26,205] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/app/trace.py", line 650, in fast_trace_task
+    uuid, args, kwargs, request,
+[2022-06-17 09:39:26,205] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/app/trace.py", line 451, in trace_task
+    R = retval = fun(*args, **kwargs)
+[2022-06-17 09:39:26,216] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/celery/app/trace.py", line 734, in __protected_call__
+    return self.run(*args, **kwargs)
+[2022-06-17 09:39:26,219] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/executors/celery_executor.py", line 93, in execute_command
+    _execute_in_fork(command_to_exec, celery_task_id)
+[2022-06-17 09:39:26,221] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/executors/celery_executor.py", line 128, in _execute_in_fork
+    args.func(args)
+[2022-06-17 09:39:26,241] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/cli/cli_parser.py", line 51, in command
+    return func(*args, **kwargs)
+[2022-06-17 09:39:26,277] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/utils/cli.py", line 99, in wrapper
+    return f(*args, **kwargs)
+[2022-06-17 09:39:26,311] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/cli/commands/task_command.py", line 376, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+[2022-06-17 09:39:26,324] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/cli/commands/task_command.py", line 182, in _run_task_by_selected_method
+    _run_task_by_local_task_job(args, ti)
+[2022-06-17 09:39:26,334] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/cli/commands/task_command.py", line 240, in _run_task_by_local_task_job
+    run_job.run()
+[2022-06-17 09:39:26,337] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/jobs/base_job.py", line 244, in run
+    self._execute()
+[2022-06-17 09:39:26,340] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/jobs/local_task_job.py", line 105, in _execute
+    self.task_runner.start()
+[2022-06-17 09:39:26,354] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/task/task_runner/standard_task_runner.py", line 41, in start
+    self.process = self._start_by_fork()
+[2022-06-17 09:39:26,355] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/task/task_runner/standard_task_runner.py", line 88, in _start_by_fork
+    args.func(args, dag=self.dag)
+[2022-06-17 09:39:26,373] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/cli/cli_parser.py", line 51, in command
+    return func(*args, **kwargs)
+[2022-06-17 09:39:26,380] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/utils/cli.py", line 99, in wrapper
+    return f(*args, **kwargs)
+[2022-06-17 09:39:26,402] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/cli/commands/task_command.py", line 376, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+[2022-06-17 09:39:26,418] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/cli/commands/task_command.py", line 184, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+[2022-06-17 09:39:26,434] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/cli/commands/task_command.py", line 261, in _run_raw_task
+    error_file=args.error_file,
+[2022-06-17 09:39:26,450] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+[2022-06-17 09:39:26,482] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/models/taskinstance.py", line 1451, in _run_raw_task
+    self._execute_task_with_callbacks(context, test_mode)
+[2022-06-17 09:39:26,514] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/models/taskinstance.py", line 1598, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+[2022-06-17 09:39:26,531] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/models/taskinstance.py", line 1659, in _execute_task
+    result = execute_callable(context=context)
+[2022-06-17 09:39:26,546] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/operators/python.py", line 173, in execute
+    self.log.info("Done. Returned value was: %s", return_value)
+[2022-06-17 09:39:26,547] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 1378, in info
+    self._log(INFO, msg, args, **kwargs)
+[2022-06-17 09:39:26,547] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 1514, in _log
+    self.handle(record)
+[2022-06-17 09:39:26,549] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 1524, in handle
+    self.callHandlers(record)
+[2022-06-17 09:39:26,549] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 1586, in callHandlers
+    hdlr.handle(record)
+[2022-06-17 09:39:26,550] {logging_mixin.py:115} WARNING -   File "/usr/local/lib/python3.7/logging/__init__.py", line 894, in handle
+    self.emit(record)
+[2022-06-17 09:39:26,550] {logging_mixin.py:115} WARNING -   File "/home/***/.local/lib/python3.7/site-packages/***/utils/log/file_task_handler.py", line 67, in emit
+    self.handler.emit(record)
+[2022-06-17 09:39:26,551] {logging_mixin.py:115} WARNING - Message: 'Done. Returned value was: %s'
+Arguments: (<***.models.xcom_arg.XComArg object at 0x7f2fbc2c9650>,)
+[2022-06-17 09:39:26,597] {xcom.py:585} ERROR - Could not serialize the XCom value into JSON. If you are using pickle instead of JSON for XCom, then you need to enable pickle support for XCom in your *** config.
+[2022-06-17 09:39:26,600] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 68, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 2392, in xcom_push
+    session=session,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 68, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom.py", line 197, in set
+    map_index=map_index,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom.py", line 582, in serialize_value
+    return json.dumps(value).encode('UTF-8')
+  File "/usr/local/lib/python3.7/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type XComArg is not JSON serializable
+[2022-06-17 09:39:26,725] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=xcom-canan, task_id=test, execution_date=20220616T090000, start_date=20220617T093921, end_date=20220617T093926
+[2022-06-17 09:39:26,860] {standard_task_runner.py:97} ERROR - Failed to execute job 525 for task test (Object of type XComArg is not JSON serializable; 4144)
+[2022-06-17 09:39:26,894] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-17 09:39:27,133] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

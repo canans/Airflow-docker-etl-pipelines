@@ -1,0 +1,23 @@
+[2022-06-20 21:04:34,981] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl-processing.transform manual__2022-06-20T21:04:17.067943+00:00 [queued]>
+[2022-06-20 21:04:35,045] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl-processing.transform manual__2022-06-20T21:04:17.067943+00:00 [queued]>
+[2022-06-20 21:04:35,081] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-20 21:04:35,222] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-20 21:04:35,233] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-20 21:04:35,318] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): transform> on 2022-06-20 21:04:17.067943+00:00
+[2022-06-20 21:04:35,332] {standard_task_runner.py:52} INFO - Started process 4711 to run task
+[2022-06-20 21:04:35,348] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl-processing', 'transform', 'manual__2022-06-20T21:04:17.067943+00:00', '--job-id', '712', '--raw', '--subdir', 'DAGS_FOLDER/etl_processing.py', '--cfg-path', '/tmp/tmpuxea2h86', '--error-file', '/tmp/tmpxl_44q6_']
+[2022-06-20 21:04:35,351] {standard_task_runner.py:80} INFO - Job 712: Subtask transform
+[2022-06-20 21:04:35,819] {task_command.py:370} INFO - Running <TaskInstance: etl-processing.transform manual__2022-06-20T21:04:17.067943+00:00 [running]> on host fe209149cfc1
+[2022-06-20 21:04:36,334] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl-processing
+AIRFLOW_CTX_TASK_ID=transform
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T21:04:17.067943+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-20T21:04:17.067943+00:00
+[2022-06-20 21:04:36,486] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-20 21:04:36,577] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl-processing, task_id=transform, execution_date=20220620T210417, start_date=20220620T210435, end_date=20220620T210436
+[2022-06-20 21:04:36,741] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-20 21:04:37,125] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

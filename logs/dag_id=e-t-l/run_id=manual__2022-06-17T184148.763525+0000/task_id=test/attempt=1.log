@@ -1,0 +1,105 @@
+[2022-06-17 18:42:02,111] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: e-t-l.test manual__2022-06-17T18:41:48.763525+00:00 [queued]>
+[2022-06-17 18:42:02,302] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: e-t-l.test manual__2022-06-17T18:41:48.763525+00:00 [queued]>
+[2022-06-17 18:42:02,316] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 18:42:02,318] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-17 18:42:02,319] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 18:42:02,702] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): test> on 2022-06-17 18:41:48.763525+00:00
+[2022-06-17 18:42:02,745] {standard_task_runner.py:52} INFO - Started process 17960 to run task
+[2022-06-17 18:42:02,814] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'e-t-l', 'test', 'manual__2022-06-17T18:41:48.763525+00:00', '--job-id', '546', '--raw', '--subdir', 'DAGS_FOLDER/new-new.py', '--cfg-path', '/tmp/tmprwvobjqt', '--error-file', '/tmp/tmpl76iwx14']
+[2022-06-17 18:42:02,828] {standard_task_runner.py:80} INFO - Job 546: Subtask test
+[2022-06-17 18:42:04,025] {task_command.py:370} INFO - Running <TaskInstance: e-t-l.test manual__2022-06-17T18:41:48.763525+00:00 [running]> on host fe209149cfc1
+[2022-06-17 18:42:05,600] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=e-t-l
+AIRFLOW_CTX_TASK_ID=test
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T18:41:48.763525+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-17T18:41:48.763525+00:00
+[2022-06-17 18:42:05,938] {base.py:68} INFO - Using connection ID 'mysql_con' for task execution.
+[2022-06-17 18:42:06,524] {base.py:68} INFO - Using connection ID 'mysql_con' for task execution.
+[2022-06-17 18:42:06,958] {logging_mixin.py:115} INFO - source_db_store_result      STX_ID STORE_NAME  ...  STORE_LIVE_DATE  SALES_CREATE_DATE
+0   2345678    Mağaza1  ...       2021-03-01         2021-03-05
+1   2345679    Mağaza1  ...       2021-03-01         2021-03-05
+2   2345680    Mağaza1  ...       2021-03-01         2021-03-05
+3   2345681    Mağaza2  ...       2021-03-01         2021-04-05
+4   2345682    Mağaza3  ...       2021-03-01         2021-05-05
+5   2345683    Mağaza4  ...       2021-03-01         2021-06-05
+6   2345684    Mağaza5  ...       2021-04-01         2021-03-05
+7   2345685    Mağaza6  ...       2021-04-01         2021-07-05
+8   2345686    Mağaza7  ...       2021-04-01         2021-03-05
+9   2345687    Mağaza8  ...       2021-04-01         2021-08-05
+10  2345688    Mağaza9  ...       2021-05-01         2021-07-05
+11  2345689   Mağaza10  ...       2021-05-01         2021-03-05
+12  2345690    Mağaza2  ...       2021-05-01         2021-09-05
+13  2345691    Mağaza4  ...       2021-05-01         2021-02-05
+14  2345692       None  ...              NaT                NaT
+15  2345693    Mağaza1  ...       2021-03-01         2021-03-05
+16  2345694       None  ...              NaT                NaT
+17  2345695       None  ...              NaT         2021-03-05
+18  2345696       None  ...              NaT                NaT
+19  2345697       None  ...              NaT                NaT
+20  2345698       None  ...              NaT                NaT
+21  2345699       None  ...              NaT         2021-03-05
+22  2345700       None  ...              NaT                NaT
+23  2345701       None  ...              NaT         2021-03-05
+24  2345702       None  ...              NaT                NaT
+25  2345703       None  ...              NaT                NaT
+26  2345704       None  ...              NaT         2021-03-05
+27  2345705       None  ...              NaT                NaT
+28  2345706       None  ...              NaT                NaT
+
+[29 rows x 7 columns]
+[2022-06-17 18:42:07,075] {logging_mixin.py:115} INFO - source_db_customer_result          ID       NAME       CITY CREATE_DATE
+0   4567890   Müşteri1   İstanbul  2021-02-01
+1   4567891   Müşteri1   İstanbul  2021-02-01
+2   4567892   Müşteri1   İstanbul  2021-02-01
+3   4567893   Müşteri1   İstanbul  2021-02-01
+4   4567894   Müşteri3     Ankara  2021-03-01
+5   4567895   Müşteri3     Ankara  2021-03-01
+6   4567896   Müşteri4  Kastamonu  2021-04-01
+7   4567897   Müşteri4  Kastamonu  2021-04-01
+8   4567898   Müşteri4  Kastamonu  2021-04-01
+9   4567899   Müşteri4  Kastamonu  2021-04-01
+10  4567901   Müşteri6  Kastamonu  2021-05-01
+11  4567902   Müşteri7     Batman  2021-06-01
+12  4567903   Müşteri7  Kastamonu  2021-07-01
+13  4567904   Müşteri8     Ankara  2021-08-01
+14  4567905   Müşteri9     Ankara  2021-09-01
+15  4567906   Müşteri6  Kastamonu  2021-05-01
+16  4567907  Müşteri11    Kocaeli  2021-09-01
+17  4567908  Müşteri12    Sakarya  2021-08-01
+18  4567988  Müşteri10     Ankara  2021-09-01
+[2022-06-17 18:42:07,345] {xcom.py:585} ERROR - Could not serialize the XCom value into JSON. If you are using pickle instead of JSON for XCom, then you need to enable pickle support for XCom in your *** config.
+[2022-06-17 18:42:07,359] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/new-new.py", line 27, in get_source_data
+    ti.xcom_push('extract_data', {"store_result":source_db_store_result.to_dict(),"customer_result":source_db_customer_result.to_dict()})
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 2392, in xcom_push
+    session=session,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 68, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom.py", line 197, in set
+    map_index=map_index,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom.py", line 582, in serialize_value
+    return json.dumps(value).encode('UTF-8')
+  File "/usr/local/lib/python3.7/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Timestamp is not JSON serializable
+[2022-06-17 18:42:07,719] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=e-t-l, task_id=test, execution_date=20220617T184148, start_date=20220617T184202, end_date=20220617T184207
+[2022-06-17 18:42:08,004] {standard_task_runner.py:97} ERROR - Failed to execute job 546 for task test (Object of type Timestamp is not JSON serializable; 17960)
+[2022-06-17 18:42:08,587] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-17 18:42:09,337] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

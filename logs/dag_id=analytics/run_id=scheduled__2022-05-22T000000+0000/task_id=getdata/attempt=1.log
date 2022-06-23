@@ -1,0 +1,26 @@
+[2022-06-16 10:32:24,694] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: analytics.getdata scheduled__2022-05-22T00:00:00+00:00 [queued]>
+[2022-06-16 10:32:24,716] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: analytics.getdata scheduled__2022-05-22T00:00:00+00:00 [queued]>
+[2022-06-16 10:32:24,716] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-16 10:32:24,717] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-16 10:32:24,718] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-16 10:32:24,830] {taskinstance.py:1377} INFO - Executing <Task(MySqlOperator): getdata> on 2022-05-22 00:00:00+00:00
+[2022-06-16 10:32:24,859] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'analytics', 'getdata', 'scheduled__2022-05-22T00:00:00+00:00', '--job-id', '442', '--raw', '--subdir', 'DAGS_FOLDER/testing_etl.py', '--cfg-path', '/tmp/tmp133pun2g', '--error-file', '/tmp/tmp87f1y5z5']
+[2022-06-16 10:32:24,858] {standard_task_runner.py:52} INFO - Started process 3580 to run task
+[2022-06-16 10:32:24,861] {standard_task_runner.py:80} INFO - Job 442: Subtask getdata
+[2022-06-16 10:32:25,306] {task_command.py:370} INFO - Running <TaskInstance: analytics.getdata scheduled__2022-05-22T00:00:00+00:00 [running]> on host fe209149cfc1
+[2022-06-16 10:32:26,090] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=analytics
+AIRFLOW_CTX_TASK_ID=getdata
+AIRFLOW_CTX_EXECUTION_DATE=2022-05-22T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-05-22T00:00:00+00:00
+[2022-06-16 10:32:26,091] {mysql.py:82} INFO - Executing: SELECT * from Customer_T;
+[2022-06-16 10:32:26,137] {base.py:68} INFO - Using connection ID 'mysql_con' for task execution.
+[2022-06-16 10:32:26,196] {dbapi.py:213} INFO - Running statement: SELECT * from Customer_T;, parameters: None
+[2022-06-16 10:32:26,198] {dbapi.py:221} INFO - Rows affected: 19
+[2022-06-16 10:32:26,233] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=analytics, task_id=getdata, execution_date=20220522T000000, start_date=20220616T103224, end_date=20220616T103226
+[2022-06-16 10:32:26,326] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-16 10:32:26,440] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

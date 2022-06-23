@@ -1,0 +1,55 @@
+[2022-06-17 19:00:04,436] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: e-t-l.test scheduled__2022-06-17T18:40:00+00:00 [queued]>
+[2022-06-17 19:00:04,490] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: e-t-l.test scheduled__2022-06-17T18:40:00+00:00 [queued]>
+[2022-06-17 19:00:04,515] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 19:00:04,526] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-17 19:00:04,528] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 19:00:04,599] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): test> on 2022-06-17 18:40:00+00:00
+[2022-06-17 19:00:04,614] {standard_task_runner.py:52} INFO - Started process 18479 to run task
+[2022-06-17 19:00:04,619] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'e-t-l', 'test', 'scheduled__2022-06-17T18:40:00+00:00', '--job-id', '552', '--raw', '--subdir', 'DAGS_FOLDER/new-new.py', '--cfg-path', '/tmp/tmpjw5a4jp3', '--error-file', '/tmp/tmpajrf3yrx']
+[2022-06-17 19:00:04,624] {standard_task_runner.py:80} INFO - Job 552: Subtask test
+[2022-06-17 19:00:04,797] {task_command.py:370} INFO - Running <TaskInstance: e-t-l.test scheduled__2022-06-17T18:40:00+00:00 [running]> on host fe209149cfc1
+[2022-06-17 19:00:05,369] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=e-t-l
+AIRFLOW_CTX_TASK_ID=test
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T18:40:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-06-17T18:40:00+00:00
+[2022-06-17 19:00:05,569] {base.py:68} INFO - Using connection ID 'mysql_con' for task execution.
+[2022-06-17 19:00:05,924] {base.py:68} INFO - Using connection ID 'mysql_con' for task execution.
+[2022-06-17 19:00:06,049] {logging_mixin.py:115} INFO - source_db_store_result {'STX_ID': {0: 2345678, 1: 2345679, 2: 2345680, 3: 2345681, 4: 2345682, 5: 2345683, 6: 2345684, 7: 2345685, 8: 2345686, 9: 2345687, 10: 2345688, 11: 2345689, 12: 2345690, 13: 2345691, 14: 2345692, 15: 2345693, 16: 2345694, 17: 2345695, 18: 2345696, 19: 2345697, 20: 2345698, 21: 2345699, 22: 2345700, 23: 2345701, 24: 2345702, 25: 2345703, 26: 2345704, 27: 2345705, 28: 2345706}, 'STORE_NAME': {0: 'Mağaza1', 1: 'Mağaza1', 2: 'Mağaza1', 3: 'Mağaza2', 4: 'Mağaza3', 5: 'Mağaza4', 6: 'Mağaza5', 7: 'Mağaza6', 8: 'Mağaza7', 9: 'Mağaza8', 10: 'Mağaza9', 11: 'Mağaza10', 12: 'Mağaza2', 13: 'Mağaza4', 14: None, 15: 'Mağaza1', 16: None, 17: None, 18: None, 19: None, 20: None, 21: None, 22: None, 23: None, 24: None, 25: None, 26: None, 27: None, 28: None}, 'PAID_PRICE': {0: 100.3, 1: 100.3, 2: 100.3, 3: 100.3, 4: 200.3, 5: 28.3, 6: 100.3, 7: 79.3, 8: 256.3, 9: 456.3, 10: 432.3, 11: 75.3, 12: 100.3, 13: 36.3, 14: nan, 15: 100.3, 16: nan, 17: 75.3, 18: nan, 19: nan, 20: nan, 21: 100.3, 22: nan, 23: 100.3, 24: nan, 25: nan, 26: 100.3, 27: nan, 28: nan}, 'TRX_STATUS': {0: 1, 1: 1, 2: 0, 3: 0, 4: 0, 5: 1, 6: 0, 7: 1, 8: 1, 9: 1, 10: 1, 11: 0, 12: 1, 13: 1, 14: 0, 15: 1, 16: 1, 17: 1, 18: 0, 19: 0, 20: 1, 21: 1, 22: 0, 23: 1, 24: 1, 25: 1, 26: 0, 27: 0, 28: 0}, 'STORE_STATUS': {0: 0.0, 1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0, 5: 0.0, 6: 0.0, 7: 0.0, 8: 0.0, 9: 0.0, 10: 0.0, 11: 0.0, 12: 0.0, 13: 0.0, 14: nan, 15: 0.0, 16: nan, 17: nan, 18: nan, 19: nan, 20: nan, 21: nan, 22: nan, 23: nan, 24: nan, 25: nan, 26: nan, 27: nan, 28: nan}, 'STORE_LIVE_DATE': {0: Timestamp('2021-03-01 00:00:00'), 1: Timestamp('2021-03-01 00:00:00'), 2: Timestamp('2021-03-01 00:00:00'), 3: Timestamp('2021-03-01 00:00:00'), 4: Timestamp('2021-03-01 00:00:00'), 5: Timestamp('2021-03-01 00:00:00'), 6: Timestamp('2021-04-01 00:00:00'), 7: Timestamp('2021-04-01 00:00:00'), 8: Timestamp('2021-04-01 00:00:00'), 9: Timestamp('2021-04-01 00:00:00'), 10: Timestamp('2021-05-01 00:00:00'), 11: Timestamp('2021-05-01 00:00:00'), 12: Timestamp('2021-05-01 00:00:00'), 13: Timestamp('2021-05-01 00:00:00'), 14: NaT, 15: Timestamp('2021-03-01 00:00:00'), 16: NaT, 17: NaT, 18: NaT, 19: NaT, 20: NaT, 21: NaT, 22: NaT, 23: NaT, 24: NaT, 25: NaT, 26: NaT, 27: NaT, 28: NaT}, 'SALES_CREATE_DATE': {0: Timestamp('2021-03-05 00:00:00'), 1: Timestamp('2021-03-05 00:00:00'), 2: Timestamp('2021-03-05 00:00:00'), 3: Timestamp('2021-04-05 00:00:00'), 4: Timestamp('2021-05-05 00:00:00'), 5: Timestamp('2021-06-05 00:00:00'), 6: Timestamp('2021-03-05 00:00:00'), 7: Timestamp('2021-07-05 00:00:00'), 8: Timestamp('2021-03-05 00:00:00'), 9: Timestamp('2021-08-05 00:00:00'), 10: Timestamp('2021-07-05 00:00:00'), 11: Timestamp('2021-03-05 00:00:00'), 12: Timestamp('2021-09-05 00:00:00'), 13: Timestamp('2021-02-05 00:00:00'), 14: NaT, 15: Timestamp('2021-03-05 00:00:00'), 16: NaT, 17: Timestamp('2021-03-05 00:00:00'), 18: NaT, 19: NaT, 20: NaT, 21: Timestamp('2021-03-05 00:00:00'), 22: NaT, 23: Timestamp('2021-03-05 00:00:00'), 24: NaT, 25: NaT, 26: Timestamp('2021-03-05 00:00:00'), 27: NaT, 28: NaT}}
+[2022-06-17 19:00:06,051] {logging_mixin.py:115} INFO - source_db_customer_result {'ID': {0: 4567890, 1: 4567891, 2: 4567892, 3: 4567893, 4: 4567894, 5: 4567895, 6: 4567896, 7: 4567897, 8: 4567898, 9: 4567899, 10: 4567901, 11: 4567902, 12: 4567903, 13: 4567904, 14: 4567905, 15: 4567906, 16: 4567907, 17: 4567908, 18: 4567988}, 'NAME': {0: 'Müşteri1', 1: 'Müşteri1', 2: 'Müşteri1', 3: 'Müşteri1', 4: 'Müşteri3', 5: 'Müşteri3', 6: 'Müşteri4', 7: 'Müşteri4', 8: 'Müşteri4', 9: 'Müşteri4', 10: 'Müşteri6', 11: 'Müşteri7', 12: 'Müşteri7', 13: 'Müşteri8', 14: 'Müşteri9', 15: 'Müşteri6', 16: 'Müşteri11', 17: 'Müşteri12', 18: 'Müşteri10'}, 'CITY': {0: 'İstanbul', 1: 'İstanbul', 2: 'İstanbul', 3: 'İstanbul', 4: 'Ankara', 5: 'Ankara', 6: 'Kastamonu', 7: 'Kastamonu', 8: 'Kastamonu', 9: 'Kastamonu', 10: 'Kastamonu', 11: 'Batman', 12: 'Kastamonu', 13: 'Ankara', 14: 'Ankara', 15: 'Kastamonu', 16: 'Kocaeli', 17: 'Sakarya', 18: 'Ankara'}, 'CREATE_DATE': {0: Timestamp('2021-02-01 00:00:00'), 1: Timestamp('2021-02-01 00:00:00'), 2: Timestamp('2021-02-01 00:00:00'), 3: Timestamp('2021-02-01 00:00:00'), 4: Timestamp('2021-03-01 00:00:00'), 5: Timestamp('2021-03-01 00:00:00'), 6: Timestamp('2021-04-01 00:00:00'), 7: Timestamp('2021-04-01 00:00:00'), 8: Timestamp('2021-04-01 00:00:00'), 9: Timestamp('2021-04-01 00:00:00'), 10: Timestamp('2021-05-01 00:00:00'), 11: Timestamp('2021-06-01 00:00:00'), 12: Timestamp('2021-07-01 00:00:00'), 13: Timestamp('2021-08-01 00:00:00'), 14: Timestamp('2021-09-01 00:00:00'), 15: Timestamp('2021-05-01 00:00:00'), 16: Timestamp('2021-09-01 00:00:00'), 17: Timestamp('2021-08-01 00:00:00'), 18: Timestamp('2021-09-01 00:00:00')}}
+[2022-06-17 19:00:06,147] {xcom.py:585} ERROR - Could not serialize the XCom value into JSON. If you are using pickle instead of JSON for XCom, then you need to enable pickle support for XCom in your *** config.
+[2022-06-17 19:00:06,179] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/new-new.py", line 32, in get_source_data
+    ti.xcom_push('extract_data', {"store_result":source_db_store_result,"customer_result":source_db_customer_result})
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 2392, in xcom_push
+    session=session,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 68, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom.py", line 197, in set
+    map_index=map_index,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom.py", line 582, in serialize_value
+    return json.dumps(value).encode('UTF-8')
+  File "/usr/local/lib/python3.7/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/local/lib/python3.7/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/local/lib/python3.7/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/local/lib/python3.7/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type Timestamp is not JSON serializable
+[2022-06-17 19:00:06,316] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=e-t-l, task_id=test, execution_date=20220617T184000, start_date=20220617T190004, end_date=20220617T190006
+[2022-06-17 19:00:06,552] {standard_task_runner.py:97} ERROR - Failed to execute job 552 for task test (Object of type Timestamp is not JSON serializable; 18479)
+[2022-06-17 19:00:06,639] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-17 19:00:07,021] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

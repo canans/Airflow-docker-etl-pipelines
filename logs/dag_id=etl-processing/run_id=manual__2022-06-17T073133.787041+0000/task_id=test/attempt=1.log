@@ -1,0 +1,35 @@
+[2022-06-17 07:31:48,411] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl-processing.test manual__2022-06-17T07:31:33.787041+00:00 [queued]>
+[2022-06-17 07:31:48,508] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl-processing.test manual__2022-06-17T07:31:33.787041+00:00 [queued]>
+[2022-06-17 07:31:48,569] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 07:31:48,585] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-17 07:31:48,601] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 07:31:48,788] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): test> on 2022-06-17 07:31:33.787041+00:00
+[2022-06-17 07:31:48,821] {standard_task_runner.py:52} INFO - Started process 364 to run task
+[2022-06-17 07:31:48,962] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl-processing', 'test', 'manual__2022-06-17T07:31:33.787041+00:00', '--job-id', '505', '--raw', '--subdir', 'DAGS_FOLDER/testing_etl.py', '--cfg-path', '/tmp/tmp7eiqoioc', '--error-file', '/tmp/tmpynvxpnpn']
+[2022-06-17 07:31:49,010] {standard_task_runner.py:80} INFO - Job 505: Subtask test
+[2022-06-17 07:31:51,020] {task_command.py:370} INFO - Running <TaskInstance: etl-processing.test manual__2022-06-17T07:31:33.787041+00:00 [running]> on host fe209149cfc1
+[2022-06-17 07:31:51,768] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl-processing
+AIRFLOW_CTX_TASK_ID=test
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T07:31:33.787041+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-17T07:31:33.787041+00:00
+[2022-06-17 07:32:06,269] {base.py:68} INFO - Using connection ID 'mysql_con' for task execution.
+[2022-06-17 07:32:08,593] {base.py:68} INFO - Using connection ID 'postgres_conn' for task execution.
+[2022-06-17 07:32:08,635] {logging_mixin.py:115} INFO - Engine(postgresql://***:***@172.21.0.4:5432/store_db)
+[2022-06-17 07:32:08,669] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/testing_etl.py", line 39, in get_source_data
+    cursor = target_db_connection.cursor()
+AttributeError: 'Connection' object has no attribute 'cursor'
+[2022-06-17 07:32:08,908] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=etl-processing, task_id=test, execution_date=20220617T073133, start_date=20220617T073148, end_date=20220617T073208
+[2022-06-17 07:32:09,235] {standard_task_runner.py:97} ERROR - Failed to execute job 505 for task test ('Connection' object has no attribute 'cursor'; 364)
+[2022-06-17 07:32:09,415] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-17 07:32:09,820] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,448 @@
+[2022-06-17 21:14:58,063] {processor.py:153} INFO - Started process (PID=4689) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:14:58,065] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:14:58,066] {logging_mixin.py:115} INFO - [2022-06-17 21:14:58,066] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:15:02,948] {logging_mixin.py:115} INFO - [2022-06-17 21:15:00,403] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:15:03,183] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:15:04,804] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 6.757 seconds
+[2022-06-17 21:15:35,137] {processor.py:153} INFO - Started process (PID=4753) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:15:35,138] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:15:35,140] {logging_mixin.py:115} INFO - [2022-06-17 21:15:35,140] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:15:35,707] {logging_mixin.py:115} INFO - [2022-06-17 21:15:35,700] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:15:35,710] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:15:35,739] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 0.608 seconds
+[2022-06-17 21:16:11,630] {processor.py:153} INFO - Started process (PID=4812) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:16:11,645] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:16:11,647] {logging_mixin.py:115} INFO - [2022-06-17 21:16:11,646] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:16:13,155] {logging_mixin.py:115} INFO - [2022-06-17 21:16:13,146] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:16:13,158] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:16:13,209] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 1.587 seconds
+[2022-06-17 21:16:43,475] {processor.py:153} INFO - Started process (PID=4876) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:16:43,476] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:16:43,480] {logging_mixin.py:115} INFO - [2022-06-17 21:16:43,480] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:16:44,078] {logging_mixin.py:115} INFO - [2022-06-17 21:16:44,071] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:16:44,080] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:16:44,111] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 0.643 seconds
+[2022-06-17 21:17:14,859] {processor.py:153} INFO - Started process (PID=4940) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:17:14,862] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:17:14,863] {logging_mixin.py:115} INFO - [2022-06-17 21:17:14,863] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:17:16,716] {logging_mixin.py:115} INFO - [2022-06-17 21:17:16,672] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:17:16,752] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:17:16,870] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 2.019 seconds
+[2022-06-17 21:17:47,427] {processor.py:153} INFO - Started process (PID=4993) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:17:47,429] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:17:47,430] {logging_mixin.py:115} INFO - [2022-06-17 21:17:47,430] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:17:48,650] {logging_mixin.py:115} INFO - [2022-06-17 21:17:48,598] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:17:48,654] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:17:48,757] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 1.336 seconds
+[2022-06-17 21:18:19,908] {processor.py:153} INFO - Started process (PID=5054) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:18:19,924] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:18:19,940] {logging_mixin.py:115} INFO - [2022-06-17 21:18:19,940] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:18:23,149] {logging_mixin.py:115} INFO - [2022-06-17 21:18:23,025] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:18:23,202] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:18:23,323] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 3.464 seconds
+[2022-06-17 21:18:55,755] {processor.py:153} INFO - Started process (PID=5116) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:18:55,771] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:18:55,781] {logging_mixin.py:115} INFO - [2022-06-17 21:18:55,781] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:18:57,413] {logging_mixin.py:115} INFO - [2022-06-17 21:18:57,402] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:18:57,416] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:18:57,527] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 1.779 seconds
+[2022-06-17 21:19:28,114] {processor.py:153} INFO - Started process (PID=5182) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:19:28,115] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:19:28,116] {logging_mixin.py:115} INFO - [2022-06-17 21:19:28,116] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:19:28,835] {logging_mixin.py:115} INFO - [2022-06-17 21:19:28,811] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:19:28,844] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:19:28,893] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 0.784 seconds
+[2022-06-17 21:19:59,108] {processor.py:153} INFO - Started process (PID=5255) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:19:59,114] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:19:59,117] {logging_mixin.py:115} INFO - [2022-06-17 21:19:59,117] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:20:00,087] {logging_mixin.py:115} INFO - [2022-06-17 21:20:00,030] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:20:00,113] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:20:00,181] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 1.078 seconds
+[2022-06-17 21:20:30,782] {processor.py:153} INFO - Started process (PID=5319) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:20:30,783] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:20:30,814] {logging_mixin.py:115} INFO - [2022-06-17 21:20:30,814] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:20:31,849] {logging_mixin.py:115} INFO - [2022-06-17 21:20:31,837] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:20:31,863] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:20:31,941] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 1.177 seconds
+[2022-06-17 21:21:02,113] {processor.py:153} INFO - Started process (PID=5379) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:21:02,113] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:21:02,115] {logging_mixin.py:115} INFO - [2022-06-17 21:21:02,115] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:21:02,738] {logging_mixin.py:115} INFO - [2022-06-17 21:21:02,732] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:21:02,740] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:21:02,774] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 0.666 seconds
+[2022-06-17 21:21:33,400] {processor.py:153} INFO - Started process (PID=5440) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:21:33,401] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:21:33,403] {logging_mixin.py:115} INFO - [2022-06-17 21:21:33,402] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:21:34,049] {logging_mixin.py:115} INFO - [2022-06-17 21:21:34,039] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:21:34,051] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:21:34,129] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 0.735 seconds
+[2022-06-17 21:22:05,014] {processor.py:153} INFO - Started process (PID=5513) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:22:05,015] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:22:05,017] {logging_mixin.py:115} INFO - [2022-06-17 21:22:05,017] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:22:06,030] {logging_mixin.py:115} INFO - [2022-06-17 21:22:05,931] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:22:06,039] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:22:06,125] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 1.120 seconds
+[2022-06-17 21:22:36,225] {processor.py:153} INFO - Started process (PID=5575) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:22:36,227] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:22:36,234] {logging_mixin.py:115} INFO - [2022-06-17 21:22:36,234] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:22:36,919] {logging_mixin.py:115} INFO - [2022-06-17 21:22:36,912] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:22:36,921] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:22:37,026] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 0.809 seconds
+[2022-06-17 21:23:07,976] {processor.py:153} INFO - Started process (PID=5647) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:23:07,983] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:23:07,992] {logging_mixin.py:115} INFO - [2022-06-17 21:23:07,991] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:23:09,008] {logging_mixin.py:115} INFO - [2022-06-17 21:23:08,997] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:23:09,011] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:23:09,081] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 1.115 seconds
+[2022-06-17 21:23:39,589] {processor.py:153} INFO - Started process (PID=5712) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:23:39,590] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:23:39,591] {logging_mixin.py:115} INFO - [2022-06-17 21:23:39,590] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:23:40,028] {logging_mixin.py:115} INFO - [2022-06-17 21:23:40,009] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:23:40,032] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:23:40,099] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 0.519 seconds
+[2022-06-17 21:24:11,084] {processor.py:153} INFO - Started process (PID=5775) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:24:11,085] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:24:11,086] {logging_mixin.py:115} INFO - [2022-06-17 21:24:11,085] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:24:11,456] {logging_mixin.py:115} INFO - [2022-06-17 21:24:11,451] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:24:11,458] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:24:11,507] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 0.429 seconds
+[2022-06-17 21:24:41,759] {processor.py:153} INFO - Started process (PID=5845) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:24:41,760] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:24:41,767] {logging_mixin.py:115} INFO - [2022-06-17 21:24:41,767] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:24:42,607] {logging_mixin.py:115} INFO - [2022-06-17 21:24:42,599] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:24:42,609] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:24:42,651] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 0.898 seconds
+[2022-06-17 21:25:12,850] {processor.py:153} INFO - Started process (PID=5910) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:25:12,851] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:25:12,852] {logging_mixin.py:115} INFO - [2022-06-17 21:25:12,852] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:25:13,308] {logging_mixin.py:115} INFO - [2022-06-17 21:25:13,303] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:25:13,309] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:25:13,350] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 0.506 seconds
+[2022-06-17 21:25:43,415] {processor.py:153} INFO - Started process (PID=5971) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:25:43,416] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:25:43,418] {logging_mixin.py:115} INFO - [2022-06-17 21:25:43,418] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:25:43,765] {logging_mixin.py:115} INFO - [2022-06-17 21:25:43,759] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:25:43,767] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:25:43,830] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 0.421 seconds
+[2022-06-17 21:26:14,015] {processor.py:153} INFO - Started process (PID=6043) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:26:14,017] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:26:14,021] {logging_mixin.py:115} INFO - [2022-06-17 21:26:14,021] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:26:14,538] {logging_mixin.py:115} INFO - [2022-06-17 21:26:14,532] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:26:14,540] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:26:14,603] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 0.593 seconds
+[2022-06-17 21:26:45,266] {processor.py:153} INFO - Started process (PID=6106) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:26:45,267] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:26:45,269] {logging_mixin.py:115} INFO - [2022-06-17 21:26:45,269] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:26:46,327] {logging_mixin.py:115} INFO - [2022-06-17 21:26:46,317] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:26:46,329] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:26:46,419] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 1.158 seconds
+[2022-06-17 21:27:16,575] {processor.py:153} INFO - Started process (PID=6179) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:27:16,576] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:27:16,578] {logging_mixin.py:115} INFO - [2022-06-17 21:27:16,577] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:27:17,127] {logging_mixin.py:115} INFO - [2022-06-17 21:27:17,121] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:27:17,129] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:27:17,186] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 0.617 seconds
+[2022-06-17 21:27:47,700] {processor.py:153} INFO - Started process (PID=6241) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:27:47,701] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:27:47,702] {logging_mixin.py:115} INFO - [2022-06-17 21:27:47,702] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:27:48,095] {logging_mixin.py:115} INFO - [2022-06-17 21:27:48,089] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:27:48,097] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:27:48,156] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 0.460 seconds
+[2022-06-17 21:28:18,303] {processor.py:153} INFO - Started process (PID=6305) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:28:18,305] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:28:18,305] {logging_mixin.py:115} INFO - [2022-06-17 21:28:18,305] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:28:18,681] {logging_mixin.py:115} INFO - [2022-06-17 21:28:18,675] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:28:18,682] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:28:18,740] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 0.442 seconds
+[2022-06-17 21:28:49,436] {processor.py:153} INFO - Started process (PID=6377) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:28:49,437] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:28:49,438] {logging_mixin.py:115} INFO - [2022-06-17 21:28:49,438] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:28:49,837] {logging_mixin.py:115} INFO - [2022-06-17 21:28:49,832] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:28:49,839] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:28:49,887] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 0.455 seconds
+[2022-06-17 21:29:20,197] {processor.py:153} INFO - Started process (PID=6439) to work on /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:29:20,200] {processor.py:641} INFO - Processing file /opt/airflow/dags/tast-testing.py for tasks to queue
+[2022-06-17 21:29:20,203] {logging_mixin.py:115} INFO - [2022-06-17 21:29:20,203] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:29:21,026] {logging_mixin.py:115} INFO - [2022-06-17 21:29:21,020] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/tast-testing.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tast-testing.py", line 68, in <module>
+    source_db_store_result,source_db_customer_result=get_source_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/xcom_arg.py", line 92, in __iter__
+    raise TypeError(f"{self.__class__.__name__!r} object is not iterable")
+TypeError: 'XComArg' object is not iterable
+[2022-06-17 21:29:21,028] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tast-testing.py
+[2022-06-17 21:29:21,064] {processor.py:161} INFO - Processing /opt/airflow/dags/tast-testing.py took 0.875 seconds

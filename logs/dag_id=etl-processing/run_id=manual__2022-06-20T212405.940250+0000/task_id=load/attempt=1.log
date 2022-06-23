@@ -1,0 +1,55 @@
+[2022-06-20 21:24:21,271] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl-processing.load manual__2022-06-20T21:24:05.940250+00:00 [queued]>
+[2022-06-20 21:24:21,301] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl-processing.load manual__2022-06-20T21:24:05.940250+00:00 [queued]>
+[2022-06-20 21:24:21,302] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-20 21:24:21,303] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-20 21:24:21,303] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-20 21:24:21,376] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): load> on 2022-06-20 21:24:05.940250+00:00
+[2022-06-20 21:24:21,393] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl-processing', 'load', 'manual__2022-06-20T21:24:05.940250+00:00', '--job-id', '722', '--raw', '--subdir', 'DAGS_FOLDER/etl_processing.py', '--cfg-path', '/tmp/tmpx16xradi', '--error-file', '/tmp/tmphmrw_m3_']
+[2022-06-20 21:24:21,388] {standard_task_runner.py:52} INFO - Started process 5431 to run task
+[2022-06-20 21:24:21,407] {standard_task_runner.py:80} INFO - Job 722: Subtask load
+[2022-06-20 21:24:21,697] {task_command.py:370} INFO - Running <TaskInstance: etl-processing.load manual__2022-06-20T21:24:05.940250+00:00 [running]> on host fe209149cfc1
+[2022-06-20 21:24:22,031] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl-processing
+AIRFLOW_CTX_TASK_ID=load
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T21:24:05.940250+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-20T21:24:05.940250+00:00
+[2022-06-20 21:24:22,092] {base.py:68} INFO - Using connection ID 'postgres_conn' for task execution.
+[2022-06-20 21:24:22,173] {logging_mixin.py:115} INFO - [{'STX_ID': 2345678, 'STORE_NAME': 'Mağaza1', 'PAID_PRICE': 100.3, 'TRX_STATUS': 1, 'STORE_STATUS': 0.0, 'STORE_LIVE_DATE': '2021-03-01 00:00:00', 'SALES_CREATE_DATE': '2021-03-05 00:00:00'}, {'STX_ID': 2345679, 'STORE_NAME': 'Mağaza1', 'PAID_PRICE': 100.3, 'TRX_STATUS': 1, 'STORE_STATUS': 0.0, 'STORE_LIVE_DATE': '2021-03-01 00:00:00', 'SALES_CREATE_DATE': '2021-03-05 00:00:00'}, {'STX_ID': 2345680, 'STORE_NAME': 'Mağaza1', 'PAID_PRICE': 100.3, 'TRX_STATUS': 0, 'STORE_STATUS': 0.0, 'STORE_LIVE_DATE': '2021-03-01 00:00:00', 'SALES_CREATE_DATE': '2021-03-05 00:00:00'}, {'STX_ID': 2345681, 'STORE_NAME': 'Mağaza2', 'PAID_PRICE': 100.3, 'TRX_STATUS': 0, 'STORE_STATUS': 0.0, 'STORE_LIVE_DATE': '2021-03-01 00:00:00', 'SALES_CREATE_DATE': '2021-04-05 00:00:00'}, {'STX_ID': 2345682, 'STORE_NAME': 'Mağaza3', 'PAID_PRICE': 200.3, 'TRX_STATUS': 0, 'STORE_STATUS': 0.0, 'STORE_LIVE_DATE': '2021-03-01 00:00:00', 'SALES_CREATE_DATE': '2021-05-05 00:00:00'}, {'STX_ID': 2345683, 'STORE_NAME': 'Mağaza4', 'PAID_PRICE': 28.3, 'TRX_STATUS': 1, 'STORE_STATUS': 0.0, 'STORE_LIVE_DATE': '2021-03-01 00:00:00', 'SALES_CREATE_DATE': '2021-06-05 00:00:00'}, {'STX_ID': 2345684, 'STORE_NAME': 'Mağaza5', 'PAID_PRICE': 100.3, 'TRX_STATUS': 0, 'STORE_STATUS': 0.0, 'STORE_LIVE_DATE': '2021-04-01 00:00:00', 'SALES_CREATE_DATE': '2021-03-05 00:00:00'}, {'STX_ID': 2345685, 'STORE_NAME': 'Mağaza6', 'PAID_PRICE': 79.3, 'TRX_STATUS': 1, 'STORE_STATUS': 0.0, 'STORE_LIVE_DATE': '2021-04-01 00:00:00', 'SALES_CREATE_DATE': '2021-07-05 00:00:00'}, {'STX_ID': 2345686, 'STORE_NAME': 'Mağaza7', 'PAID_PRICE': 256.3, 'TRX_STATUS': 1, 'STORE_STATUS': 0.0, 'STORE_LIVE_DATE': '2021-04-01 00:00:00', 'SALES_CREATE_DATE': '2021-03-05 00:00:00'}, {'STX_ID': 2345687, 'STORE_NAME': 'Mağaza8', 'PAID_PRICE': 456.3, 'TRX_STATUS': 1, 'STORE_STATUS': 0.0, 'STORE_LIVE_DATE': '2021-04-01 00:00:00', 'SALES_CREATE_DATE': '2021-08-05 00:00:00'}, {'STX_ID': 2345688, 'STORE_NAME': 'Mağaza9', 'PAID_PRICE': 432.3, 'TRX_STATUS': 1, 'STORE_STATUS': 0.0, 'STORE_LIVE_DATE': '2021-05-01 00:00:00', 'SALES_CREATE_DATE': '2021-07-05 00:00:00'}, {'STX_ID': 2345689, 'STORE_NAME': 'Mağaza10', 'PAID_PRICE': 75.3, 'TRX_STATUS': 0, 'STORE_STATUS': 0.0, 'STORE_LIVE_DATE': '2021-05-01 00:00:00', 'SALES_CREATE_DATE': '2021-03-05 00:00:00'}, {'STX_ID': 2345690, 'STORE_NAME': 'Mağaza2', 'PAID_PRICE': 100.3, 'TRX_STATUS': 1, 'STORE_STATUS': 0.0, 'STORE_LIVE_DATE': '2021-05-01 00:00:00', 'SALES_CREATE_DATE': '2021-09-05 00:00:00'}, {'STX_ID': 2345691, 'STORE_NAME': 'Mağaza4', 'PAID_PRICE': 36.3, 'TRX_STATUS': 1, 'STORE_STATUS': 0.0, 'STORE_LIVE_DATE': '2021-05-01 00:00:00', 'SALES_CREATE_DATE': '2021-02-05 00:00:00'}, {'STX_ID': 2345692, 'STORE_NAME': None, 'PAID_PRICE': None, 'TRX_STATUS': 0, 'STORE_STATUS': None, 'STORE_LIVE_DATE': None, 'SALES_CREATE_DATE': None}, {'STX_ID': 2345693, 'STORE_NAME': 'Mağaza1', 'PAID_PRICE': 100.3, 'TRX_STATUS': 1, 'STORE_STATUS': 0.0, 'STORE_LIVE_DATE': '2021-03-01 00:00:00', 'SALES_CREATE_DATE': '2021-03-05 00:00:00'}, {'STX_ID': 2345694, 'STORE_NAME': None, 'PAID_PRICE': None, 'TRX_STATUS': 1, 'STORE_STATUS': None, 'STORE_LIVE_DATE': None, 'SALES_CREATE_DATE': None}, {'STX_ID': 2345695, 'STORE_NAME': None, 'PAID_PRICE': 75.3, 'TRX_STATUS': 1, 'STORE_STATUS': None, 'STORE_LIVE_DATE': None, 'SALES_CREATE_DATE': '2021-03-05 00:00:00'}, {'STX_ID': 2345696, 'STORE_NAME': None, 'PAID_PRICE': None, 'TRX_STATUS': 0, 'STORE_STATUS': None, 'STORE_LIVE_DATE': None, 'SALES_CREATE_DATE': None}, {'STX_ID': 2345697, 'STORE_NAME': None, 'PAID_PRICE': None, 'TRX_STATUS': 0, 'STORE_STATUS': None, 'STORE_LIVE_DATE': None, 'SALES_CREATE_DATE': None}, {'STX_ID': 2345698, 'STORE_NAME': None, 'PAID_PRICE': None, 'TRX_STATUS': 1, 'STORE_STATUS': None, 'STORE_LIVE_DATE': None, 'SALES_CREATE_DATE': None}, {'STX_ID': 2345699, 'STORE_NAME': None, 'PAID_PRICE': 100.3, 'TRX_STATUS': 1, 'STORE_STATUS': None, 'STORE_LIVE_DATE': None, 'SALES_CREATE_DATE': '2021-03-05 00:00:00'}, {'STX_ID': 2345700, 'STORE_NAME': None, 'PAID_PRICE': None, 'TRX_STATUS': 0, 'STORE_STATUS': None, 'STORE_LIVE_DATE': None, 'SALES_CREATE_DATE': None}, {'STX_ID': 2345701, 'STORE_NAME': None, 'PAID_PRICE': 100.3, 'TRX_STATUS': 1, 'STORE_STATUS': None, 'STORE_LIVE_DATE': None, 'SALES_CREATE_DATE': '2021-03-05 00:00:00'}, {'STX_ID': 2345702, 'STORE_NAME': None, 'PAID_PRICE': None, 'TRX_STATUS': 1, 'STORE_STATUS': None, 'STORE_LIVE_DATE': None, 'SALES_CREATE_DATE': None}, {'STX_ID': 2345703, 'STORE_NAME': None, 'PAID_PRICE': None, 'TRX_STATUS': 1, 'STORE_STATUS': None, 'STORE_LIVE_DATE': None, 'SALES_CREATE_DATE': None}, {'STX_ID': 2345704, 'STORE_NAME': None, 'PAID_PRICE': 100.3, 'TRX_STATUS': 0, 'STORE_STATUS': None, 'STORE_LIVE_DATE': None, 'SALES_CREATE_DATE': '2021-03-05 00:00:00'}, {'STX_ID': 2345705, 'STORE_NAME': None, 'PAID_PRICE': None, 'TRX_STATUS': 0, 'STORE_STATUS': None, 'STORE_LIVE_DATE': None, 'SALES_CREATE_DATE': None}, {'STX_ID': 2345706, 'STORE_NAME': None, 'PAID_PRICE': None, 'TRX_STATUS': 0, 'STORE_STATUS': None, 'STORE_LIVE_DATE': None, 'SALES_CREATE_DATE': None}]
+[2022-06-20 21:24:22,175] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,181] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,195] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,199] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,203] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,207] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,212] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,216] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,225] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,229] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,240] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,265] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,279] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,285] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,290] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,317] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,335] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,378] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,394] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,413] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,422] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,428] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,439] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,452] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,472] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,482] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,497] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,504] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,510] {logging_mixin.py:115} INFO - 5
+[2022-06-20 21:24:22,693] {logging_mixin.py:115} INFO - [(60, 5, 'magaza', None, None, None, None, None), (61, 5, 'magaza', None, None, None, None, None), (62, 5, 'magaza', None, None, None, None, None), (63, 5, 'magaza', None, None, None, None, None), (64, 5, 'magaza', None, None, None, None, None), (65, 5, 'magaza', None, None, None, None, None), (66, 5, 'magaza', None, None, None, None, None), (67, 5, 'magaza', None, None, None, None, None), (68, 5, 'magaza', None, None, None, None, None), (69, 5, 'magaza', None, None, None, None, None), (70, 5, 'magaza', None, None, None, None, None), (71, 5, 'magaza', None, None, None, None, None), (72, 5, 'magaza', None, None, None, None, None), (73, 5, 'magaza', None, None, None, None, None), (74, 5, 'magaza', None, None, None, None, None), (75, 5, 'magaza', None, None, None, None, None), (76, 5, 'magaza', None, None, None, None, None), (77, 5, 'magaza', None, None, None, None, None), (78, 5, 'magaza', None, None, None, None, None), (79, 5, 'magaza', None, None, None, None, None), (80, 5, 'magaza', None, None, None, None, None), (81, 5, 'magaza', None, None, None, None, None), (82, 5, 'magaza', None, None, None, None, None), (83, 5, 'magaza', None, None, None, None, None), (84, 5, 'magaza', None, None, None, None, None), (85, 5, 'magaza', None, None, None, None, None), (86, 5, 'magaza', None, None, None, None, None), (87, 5, 'magaza', None, None, None, None, None), (88, 5, 'magaza', None, None, None, None, None)]
+[2022-06-20 21:24:22,694] {python.py:173} INFO - Done. Returned value was: None
+[2022-06-20 21:24:22,738] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl-processing, task_id=load, execution_date=20220620T212405, start_date=20220620T212421, end_date=20220620T212422
+[2022-06-20 21:24:22,826] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-06-20 21:24:22,940] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

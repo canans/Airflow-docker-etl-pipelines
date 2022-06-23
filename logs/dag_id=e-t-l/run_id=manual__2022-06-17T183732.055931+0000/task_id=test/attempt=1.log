@@ -1,0 +1,52 @@
+[2022-06-17 18:37:41,894] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: e-t-l.test manual__2022-06-17T18:37:32.055931+00:00 [queued]>
+[2022-06-17 18:37:42,110] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: e-t-l.test manual__2022-06-17T18:37:32.055931+00:00 [queued]>
+[2022-06-17 18:37:42,129] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 18:37:42,131] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-17 18:37:42,133] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-17 18:37:42,450] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): test> on 2022-06-17 18:37:32.055931+00:00
+[2022-06-17 18:37:42,484] {standard_task_runner.py:52} INFO - Started process 17832 to run task
+[2022-06-17 18:37:42,526] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'e-t-l', 'test', 'manual__2022-06-17T18:37:32.055931+00:00', '--job-id', '544', '--raw', '--subdir', 'DAGS_FOLDER/new-new.py', '--cfg-path', '/tmp/tmpzeg7qliy', '--error-file', '/tmp/tmp1m2x1huk']
+[2022-06-17 18:37:42,543] {standard_task_runner.py:80} INFO - Job 544: Subtask test
+[2022-06-17 18:37:43,460] {task_command.py:370} INFO - Running <TaskInstance: e-t-l.test manual__2022-06-17T18:37:32.055931+00:00 [running]> on host fe209149cfc1
+[2022-06-17 18:37:44,785] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=e-t-l
+AIRFLOW_CTX_TASK_ID=test
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-17T18:37:32.055931+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-17T18:37:32.055931+00:00
+[2022-06-17 18:37:45,109] {base.py:68} INFO - Using connection ID 'mysql_con' for task execution.
+[2022-06-17 18:37:45,441] {base.py:68} INFO - Using connection ID 'mysql_con' for task execution.
+[2022-06-17 18:37:45,538] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/new-new.py", line 25, in get_source_data
+    print("source_db_store_result",jsonify(source_db_store_result))
+  File "/home/airflow/.local/lib/python3.7/site-packages/flask/json/__init__.py", line 358, in jsonify
+    if current_app.config["JSONIFY_PRETTYPRINT_REGULAR"] or current_app.debug:
+  File "/home/airflow/.local/lib/python3.7/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+  File "/home/airflow/.local/lib/python3.7/site-packages/werkzeug/local.py", line 306, in _get_current_object
+    return self.__local()
+  File "/home/airflow/.local/lib/python3.7/site-packages/flask/globals.py", line 52, in _find_app
+    raise RuntimeError(_app_ctx_err_msg)
+RuntimeError: Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+to interface with the current application object in some way. To solve
+this, set up an application context with app.app_context().  See the
+documentation for more information.
+[2022-06-17 18:37:46,040] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=e-t-l, task_id=test, execution_date=20220617T183732, start_date=20220617T183741, end_date=20220617T183746
+[2022-06-17 18:37:46,212] {standard_task_runner.py:97} ERROR - Failed to execute job 544 for task test (Working outside of application context.
+
+This typically means that you attempted to use functionality that needed
+to interface with the current application object in some way. To solve
+this, set up an application context with app.app_context().  See the
+documentation for more information.; 17832)
+[2022-06-17 18:37:46,278] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-17 18:37:46,695] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

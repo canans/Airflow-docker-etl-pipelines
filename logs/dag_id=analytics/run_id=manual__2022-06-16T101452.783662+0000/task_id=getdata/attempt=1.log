@@ -1,0 +1,28 @@
+[2022-06-16 10:15:45,112] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: analytics.getdata manual__2022-06-16T10:14:52.783662+00:00 [queued]>
+[2022-06-16 10:15:45,672] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: analytics.getdata manual__2022-06-16T10:14:52.783662+00:00 [queued]>
+[2022-06-16 10:15:45,703] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-16 10:15:45,720] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-16 10:15:45,730] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-16 10:15:47,153] {taskinstance.py:1377} INFO - Executing <Task(MySqlOperator): getdata> on 2022-06-16 10:14:52.783662+00:00
+[2022-06-16 10:15:47,233] {standard_task_runner.py:52} INFO - Started process 2429 to run task
+[2022-06-16 10:15:47,578] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'analytics', 'getdata', 'manual__2022-06-16T10:14:52.783662+00:00', '--job-id', '102', '--raw', '--subdir', 'DAGS_FOLDER/testing_etl.py', '--cfg-path', '/tmp/tmpjv9aih6x', '--error-file', '/tmp/tmpva_iu5bs']
+[2022-06-16 10:15:47,704] {standard_task_runner.py:80} INFO - Job 102: Subtask getdata
+[2022-06-16 10:15:50,717] {task_command.py:370} INFO - Running <TaskInstance: analytics.getdata manual__2022-06-16T10:14:52.783662+00:00 [running]> on host fe209149cfc1
+[2022-06-16 10:16:04,656] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=analytics
+AIRFLOW_CTX_TASK_ID=getdata
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-16T10:14:52.783662+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-16T10:14:52.783662+00:00
+[2022-06-16 10:16:04,716] {mysql.py:82} INFO - Executing: SELECT * from Customer_T;
+[2022-06-16 10:16:06,443] {base.py:68} INFO - Using connection ID 'mysql_con' for task execution.
+[2022-06-16 10:16:12,981] {dbapi.py:213} INFO - Running statement: SELECT * from Customer_T;, parameters: None
+[2022-06-16 10:16:13,684] {dbapi.py:221} INFO - Rows affected: 19
+[2022-06-16 10:16:17,706] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=analytics, task_id=getdata, execution_date=20220616T101452, start_date=20220616T101545, end_date=20220616T101617
+[2022-06-16 10:16:19,013] {local_task_job.py:221} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2022-06-16 10:16:19,394] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 2429. PIDs of all processes in the group: [2429]
+[2022-06-16 10:16:20,032] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 2429
+[2022-06-16 10:16:20,216] {process_utils.py:75} INFO - Process psutil.Process(pid=2429, status='terminated', exitcode=0, started='10:15:46') (2429) terminated with exit code 0

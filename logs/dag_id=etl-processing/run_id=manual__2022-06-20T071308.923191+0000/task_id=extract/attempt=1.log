@@ -1,0 +1,41 @@
+[2022-06-20 07:13:25,918] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl-processing.extract manual__2022-06-20T07:13:08.923191+00:00 [queued]>
+[2022-06-20 07:13:26,105] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl-processing.extract manual__2022-06-20T07:13:08.923191+00:00 [queued]>
+[2022-06-20 07:13:26,106] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-20 07:13:26,108] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-06-20 07:13:26,108] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-06-20 07:13:26,440] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): extract> on 2022-06-20 07:13:08.923191+00:00
+[2022-06-20 07:13:26,483] {standard_task_runner.py:52} INFO - Started process 3924 to run task
+[2022-06-20 07:13:26,615] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl-processing', 'extract', 'manual__2022-06-20T07:13:08.923191+00:00', '--job-id', '626', '--raw', '--subdir', 'DAGS_FOLDER/etl_processing.py', '--cfg-path', '/tmp/tmp745lo8jr', '--error-file', '/tmp/tmp_81k4eba']
+[2022-06-20 07:13:26,629] {standard_task_runner.py:80} INFO - Job 626: Subtask extract
+[2022-06-20 07:13:27,229] {task_command.py:370} INFO - Running <TaskInstance: etl-processing.extract manual__2022-06-20T07:13:08.923191+00:00 [running]> on host fe209149cfc1
+[2022-06-20 07:13:27,885] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl-processing
+AIRFLOW_CTX_TASK_ID=extract
+AIRFLOW_CTX_EXECUTION_DATE=2022-06-20T07:13:08.923191+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-06-20T07:13:08.923191+00:00
+[2022-06-20 07:13:27,953] {base.py:68} INFO - Using connection ID 'mysql_con' for task execution.
+[2022-06-20 07:13:28,035] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/etl_processing.py", line 23, in get_source_data
+    source_db_store_result = source_db_connection.get_pandas_df(extraction_sql['store_sql'])
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 128, in get_pandas_df
+    with closing(self.get_conn()) as conn:
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/mysql/hooks/mysql.py", line 166, in get_conn
+    return MySQLdb.connect(**conn_config)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/__init__.py", line 123, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb._exceptions.OperationalError: (2003, "Can't connect to MySQL server on '172.21.0.2:3306' (111)")
+[2022-06-20 07:13:28,072] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=etl-processing, task_id=extract, execution_date=20220620T071308, start_date=20220620T071325, end_date=20220620T071328
+[2022-06-20 07:13:28,140] {standard_task_runner.py:97} ERROR - Failed to execute job 626 for task extract ((2003, "Can't connect to MySQL server on '172.21.0.2:3306' (111)"); 3924)
+[2022-06-20 07:13:28,220] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-06-20 07:13:28,407] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
